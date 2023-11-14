@@ -30,15 +30,19 @@ body {
 .secao-principal .titulo {
    font-size: 18px;
    font-weight: 700;
+   padding-top: 12px;
 }
 
 .secao-principal span {
    font-size: 14px;
    font-weight: 300;
+   padding-top: 7px;
 }
 
 .secao-principal p{
    font-size: 16px;
+   padding-top: 10px;
+
 }
 
 .ads {
