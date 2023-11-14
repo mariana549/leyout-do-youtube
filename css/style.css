@@ -3,13 +3,14 @@ body {
    /* height: 100vh; */
 
 }
+
 .container {
    display: grid;
    gap: 17px;
-   grid-template-areas: 
-   "secao-principal secao-principal secao-principal ads ads"
-   "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"
-   "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos";
+   grid-template-areas:
+      "secao-principal secao-principal secao-principal ads ads"
+      "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"
+      /* "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"; */
    /* grid-column: 1 / 6; */
 }
 
@@ -23,9 +24,24 @@ body {
    grid-area: secao-principal;
    width: 540px;
    background-color: bisque;
+   font-family: Roboto;
 }
 
-.ads{
+.secao-principal .titulo {
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.secao-principal span {
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.secao-principal p{
+   font-size: 16px;
+}
+
+.ads {
    grid-area: ads;
    background-color: burlywood;
    width: 270px;
@@ -37,7 +53,7 @@ body {
    grid-area: recomendacao-videos;
 
    background-color: brown;
-   width: 270px;   
+   width: 270px;
    display: grid;
 }
 
@@ -46,7 +62,7 @@ body {
    grid-column: 2;
 }
 
-.video-recomendacao{
+.video-recomendacao {
    background-color: #C4C4C4;
    width: 101px;
    height: 71px;
