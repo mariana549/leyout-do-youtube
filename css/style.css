@@ -9,8 +9,8 @@ body {
    display: grid;
    gap: 17px;
    grid-template-areas:
-      "secao-principal  secao-principal ads ads"
-      "secao-principal  secao-principal recomendacao-videos recomendacao-videos";
+      "secao-principal   ads "
+      "secao-principal   recomendacao-videos ";
 
 }
 
