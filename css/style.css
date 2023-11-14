@@ -1,8 +1,14 @@
 .container {
+   margin: 38px 35px;
    height: 100vh;
    width: 100vw;
 
    display: grid;
+   gap: 17px;
+   grid-template-areas: 
+   "secao-principal secao-principal secao-principal ads ads"
+   "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"
+   "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos";
 
 }
 
@@ -13,6 +19,31 @@
 }
 
 .secao-principal {
-   display: grid;
-   grid-template-columns: minmax(100px, 540px);
+   grid-area: secao-principal;
+   width: 540px;
+   background-color: bisque;
+}
+
+.ads{
+   grid-area: ads;
+   background-color: burlywood;
+   width: 270px;
+   height: 56px;
+
+}
+
+.recomendacao-videos {
+   grid-area: recomendacao-videos;
+   background-color: brown;
+}
+
+.dados {
+   display: flex;
+  /* flex-direction: column; */
+}
+
+.video-recomendacao{
+   background-color: #C4C4C4;
+   width: 101px;
+   height: 71px;
 }
