@@ -1,6 +1,7 @@
 body {
+   display: grid;
    padding: 38px 35px;
-   /* height: 100vh; */
+   justify-content: center;
 
 }
 
@@ -8,10 +9,9 @@ body {
    display: grid;
    gap: 17px;
    grid-template-areas:
-      "secao-principal secao-principal secao-principal ads ads"
-      "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"
-      /* "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"; */
-   /* grid-column: 1 / 6; */
+      "secao-principal  secao-principal ads ads"
+      "secao-principal  secao-principal recomendacao-videos recomendacao-videos";
+
 }
 
 .video {
@@ -23,7 +23,6 @@ body {
 .secao-principal {
    grid-area: secao-principal;
    width: 540px;
-   background-color: bisque;
    font-family: Roboto;
 }
 
@@ -39,7 +38,7 @@ body {
    padding-top: 7px;
 }
 
-.secao-principal p{
+.secao-principal p {
    font-size: 16px;
    padding-top: 10px;
 
@@ -47,24 +46,39 @@ body {
 
 .ads {
    grid-area: ads;
-   background-color: burlywood;
+   background-color: #C4C4C4;
    width: 270px;
    height: 56px;
 
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .recomendacao-videos {
    grid-area: recomendacao-videos;
 
-   background-color: brown;
    width: 270px;
    display: grid;
+
+   font-family: Roboto;
 }
 
 .dados {
    flex-direction: column;
    grid-column: 2;
 }
+
+.dados .titulo-do-video {
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.dados .nome-canal, .visualizacao, .tempo-de-postagem {
+   font-size: 11px;
+   font-weight: 300;
+}
+
 
 .video-recomendacao {
    background-color: #C4C4C4;
