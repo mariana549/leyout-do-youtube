@@ -4,14 +4,13 @@ body {
 
 }
 .container {
-
    display: grid;
    gap: 17px;
    grid-template-areas: 
    "secao-principal secao-principal secao-principal ads ads"
    "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos"
    "secao-principal secao-principal secao-principal recomendacao-videos recomendacao-videos";
-   grid-column: 1 / 6;
+   /* grid-column: 1 / 6; */
 }
 
 .video {
@@ -36,13 +35,15 @@ body {
 
 .recomendacao-videos {
    grid-area: recomendacao-videos;
+
    background-color: brown;
-   width: 270px;
+   width: 270px;   
+   display: grid;
 }
 
 .dados {
-   display: flex;
    flex-direction: column;
+   grid-column: 2;
 }
 
 .video-recomendacao{
